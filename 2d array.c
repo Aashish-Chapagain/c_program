@@ -3,10 +3,10 @@
 int odd_even(int n){
     if(n%2 == 0) {
 
-    return 1 ;
+    return true ;
     }
     else 
-    return 0  ; 
+    return false  ; 
 }int main(){
     int arr[3][3],i,j,count  = 0 , count2 = 0 ;
     printf("Enter the elements of the array: \n");
@@ -21,7 +21,7 @@ int odd_even(int n){
     {
         for (j=0; j<3; j++)
         {
-            if(odd_even(arr[i][j]) == 1){
+            if(odd_even(arr[i][j]) ){
 
             count += 1 ; 
             }
