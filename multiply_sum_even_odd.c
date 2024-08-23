@@ -3,10 +3,10 @@
 int odd_even(int n){
     if(n%2 == 0) {
 
-    return 1 ;
+    return true ;
     }
     else 
-    return 0  ; 
+    return false  ; 
 }int main(){
     int arr[3][3],i,j,multiply_even  = 1 , sum_odd = 0 ;
     printf("Enter the elements of the array: \n");
@@ -21,7 +21,7 @@ int odd_even(int n){
     {
         for (j=0; j<3; j++)
         {
-            if(odd_even(arr[i][j]) == 1){
+            if(odd_even(arr[i][j])){
 
             multiply_even *= arr[i][j] ; 
             }
@@ -33,7 +33,7 @@ int odd_even(int n){
         
 
     }printf("The multiplication of even number in array is : %d\n", multiply_even);
-    printf("The sum of odd number in array is : %d\n", odd_even) ;
+    printf("The sum of odd number in array is : %d\n", sum_odd) ;
 
     return 0 ; 
 }
