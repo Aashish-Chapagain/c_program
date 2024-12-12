@@ -4,6 +4,7 @@ int main()
     int n; // to take input from the user for array size  
     printf("Enter the size of the array: ");
     scanf("%d",&n);
+    int *pSizeofarray = (int*)malloc(n * sizeof(int));
     int arr[n],i,j; // to store the array elements
     for( i = 0; i < n; i++ )
     {
