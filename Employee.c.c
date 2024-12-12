@@ -49,6 +49,7 @@ int main()
         // asking for the name of the employee
         printf("Enter the name of the employee: ");
         fgets(pDetails->name, sizeof(pDetails->name), stdin);
+        // removing the newline tailed after using fgets
         len = strlen(pDetails->name);
         if (len > 0 && pDetails->name[len - 1] == '\n')
         {
@@ -57,6 +58,7 @@ int main()
         // asking for the designation of the employee
         printf("Enter the designation of the employee: ");
         fgets(pDetails->designation, sizeof(pDetails->designation), stdin);
+           // removing the newline tailed after using fgets
         len = strlen(pDetails->designation);
         if (len > 0 && pDetails->designation[len - 1] == '\n')
         {
